@@ -1,0 +1,133 @@
+/*
+ Theme Name:     Serene Child
+ Theme URI:      http://www.eichefam.net/serene-child/
+ Description:    Serene Child Theme
+ Author:         Paul Eiche
+ Author URI:     http://www.eichefam.net
+ Template:       Serene
+ Version:        1.0
+*/
+
+@import url("../serene/style.css");
+
+#main-header {
+	margin-top: 50px;
+}
+
+#logo a {
+	color: #555;
+}
+
+#mobile_menu {
+	top: 42px;
+	background: #fbad18;
+}
+
+.nav li ul,
+.et_mobile_menu {
+	padding: 15px 27px 22px 27px;
+}
+
+#top-menu li li a,
+.et_mobile_menu li a {
+	color: #555;
+}
+
+#menu-default-menu + #et_active_menu_item {
+	display: none;
+}
+#menu-default-menu:hover + #et_active_menu_item {
+	display: block;
+}
+
+#comment-wrap {
+	margin: 50px 0 80px;
+}
+
+.et-pagination .plain a {
+	background: none;
+	color: #bfbfbf;
+}
+.et-pagination .plain a:hover {
+	color: #666;
+}
+
+.et-pagination .alignleft:hover a,
+.et-pagination .alignright:hover a {
+	background: #666;
+}
+.et-pagination .alignleft:hover .plain a,
+.et-pagination .alignright:hover .plain a {
+	background: none;
+	color: #666;
+}
+
+.format-quote .top-info blockquote:before {
+	content: '\201C';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 250%;
+	line-height: 100%;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 961px) {
+	#top-menu {
+		clear: both;
+	}
+	
+	#container {
+		width: auto;
+		padding: 0 10px;
+	}
+	
+	#comment-wrap {
+		margin-bottom: 60px;
+	}
+	
+	.footer-widget {
+		width: 27%;
+	}
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+	#comment-wrap {
+		margin-bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	#container {
+		width: auto;
+		padding: 0 10px;
+	}
+	
+	.et-pagination .plain  {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#comment-wrap {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	#logo {
+		font-size: 24px;
+	}
+	
+	#mobile_menu {
+		top: 28px;
+	}
+	
+	.mobile_menu_bar {
+		font-size: 48px;
+		left: -48px;
+	}
+}
