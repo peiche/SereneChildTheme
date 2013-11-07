@@ -87,11 +87,8 @@
 }
 
 .format-link .image-cover a {
-	background-position: top left;
+	background-position: center;
 	background-size: cover;
-	-webkit-filter: brightness(50%);
-	-moz-filter: brightness(50%);
-	filter: brightness(50%);
 }
 
 body.single .format-link .top-info .post-content {
@@ -100,8 +97,9 @@ body.single .format-link .top-info .post-content {
 }
 
 .format-link .top-info.has-post-thumbnail .post-content .title a,
+.format-link .top-info.has-post-thumbnail .post-content .title a:hover,
 .format-link .top-info.has-post-thumbnail .entry-content a {
-	color: #fff;
+	color: #fff !important;
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 961px) {
