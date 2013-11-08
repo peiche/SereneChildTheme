@@ -91,7 +91,7 @@
 	background-size: cover;
 }
 
-body.single .format-link .top-info .post-content {
+.format-link .top-info .post-content {
 	position: relative;
 	z-index: 1;
 }
@@ -100,6 +100,18 @@ body.single .format-link .top-info .post-content {
 .format-link .top-info.has-post-thumbnail .post-content .title a:hover,
 .format-link .top-info.has-post-thumbnail .entry-content a {
 	color: #fff !important;
+}
+
+h2.logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+	h2.logo {
+		padding-left: 85px;
+	}
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 961px) {
